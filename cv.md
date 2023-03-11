@@ -1,5 +1,7 @@
 # Olga Krukova
 
+![My Photo](img/resume.jpg)
+
 ### Contact information:
 
 Phone: +380957248791
