@@ -5,7 +5,9 @@
 ### Contact information:
 
 Phone: +380957248791
+
 E-mail: krukovaolga1@gmail.com
+
 Telegram: @olgakrukova7771
 
 ### About Myself:
