@@ -82,6 +82,10 @@ public class Solution {
 ```
 ***
 
+### Completed project: [CV](https://github.com/LokiSpirit/rsschool-cv/blob/gh-pages/cv.md)
+
+***
+
 ### Languages:
 
 - Ukrainian - Native
