@@ -10,7 +10,9 @@ E-mail: krukovaolga1@gmail.com
 
 Telegram: @olgakrukova7771
 
-Discort: OlgaKrukova(@lokispirit)
+Discord: OlgaKrukova(@lokispirit)
+
+***
 
 ### About Myself:
 
@@ -21,6 +23,8 @@ Discort: OlgaKrukova(@lokispirit)
 - interesting, creative work
 - decent salary
 - the opportunity to develop myself in other IT areas
+
+***
 
 ### Education:
 
@@ -36,17 +40,23 @@ Oceanology
 
 September 2011 - June 2016 | Ukraine
 
+***
+
 ### Work Experience:
 
 Sale Manager
 
 September 2004 - Novenber 2011 | Ukraine
 
+***
+
 ### Tech Skills:
 
 1. JAVA Core
 2. HTML5
 3. CSS3
+
+***
 
 ### Code example:
 
@@ -70,6 +80,7 @@ public class Solution {
     }
 }
 ```
+***
 
 ### Languages:
 
