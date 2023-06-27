@@ -82,7 +82,7 @@ public class Solution {
 ```
 ***
 
-### Completed project: [CV](https://github.com/LokiSpirit/rsschool-cv/blob/gh-pages/cv.md)
+### Completed project: [CV](https://lokispirit.github.io/rsschool-cv/cv)
 
 ***
 
