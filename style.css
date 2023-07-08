@@ -1,0 +1,116 @@
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.container {
+    width: 50%;
+}
+
+.sidebar {}
+
+.avatar {}
+
+.avatar__pic {
+    width: 385px;
+    height: auto;
+}
+
+.avatar-caption {}
+
+.avatar-caption__name {}
+
+.contact-info {}
+
+.contact-info__phone {}
+
+.contact-info__phone_bold {}
+
+.contact-info__mail {}
+
+.contact-info__mail_bold {}
+
+.contact-info__telegram {}
+
+.contact-info__telegram_bold {}
+
+.contact-info__discord {}
+
+.contact-info__discord_bold {}
+
+.main {}
+
+.about {}
+
+.about__goal {}
+
+.about__goal_bold {}
+
+.about__priorities {}
+
+.about__priorities-list {}
+
+.about__priorities-item {}
+
+.education {}
+
+.education__title {}
+
+.education__item {}
+
+.education__item-title {}
+
+.education__item-faculty {}
+
+.education__item-period {}
+
+.work-experience {}
+
+.work-experience__title {}
+
+.work-experience__position {}
+
+.work-experience__period {}
+
+.tech-skills {}
+
+.tech-skills__title {}
+
+.tech-skills-list {}
+
+.tech-skills__item {}
+
+.code-example {}
+
+.code-example__title {}
+
+.code-example_prepared {}
+
+.code-example__snippet {}
+
+.completed-project {}
+
+.completed-project__link {}
+
+.completed-project__link-title {}
+
+.languages {}
+
+.languages-list {}
+
+.languages__item {}
