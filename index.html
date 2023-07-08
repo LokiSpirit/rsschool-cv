@@ -44,6 +44,7 @@
                 </div>
                 <!-- Education -->
                 <div class="education">
+                    <p class="education__title">Education:</p>
                     <div class="education__item">
                         <a href="https://ontu.edu.ua/" class="education__item-title">Odessa National University of
                             Technology</a>
@@ -61,19 +62,48 @@
                 </div>
                 <!-- Work experiance -->
                 <div class="work-experience">
+                    <p class="work-experience__title">Work experiance:</p>
                     <p class="work-experience__position">Sale Manager</p>
                     <p class="work-experience__period">September 2004 - Novenber 2011 | Ukraine</p>
                 </div>
                 <div class="tech-skills">
+                    <p class="tech-skills__title">Tech Skills</p>
                     <ol class="tech-skills-list">
                         <li class="tech-skills__item">JAVA Core</li>
                         <li class="tech-skills__item">HTML5</li>
                         <li class="tech-skills__item">CSS3</li>
                     </ol>
                 </div>
-                <div class="code-example"></div>
-                <div class="completed-project"></div>
-                <div class="languages"></div>
+                <div class="code-example">
+                    <p class="code-example__title">Code snippet example:</p>
+                    <pre class="code-example_prepared">
+                        <code class="code-example__snippet">
+                            public class Solution {
+                            
+                            static String toCamelCase(String s) {
+                            if(s==null || s.isEmpty()){
+                            return "";
+                            }
+                            String[] split = s.split("[_-]");
+                            StringBuilder builder = new StringBuilder();
+                            builder.append(split[0]);
+                            for (int i = 1; i < split.length; i++) { builder.append(split[i].substring(0, 1).toUpperCase() + split[i].substring(1));
+                                } return builder.toString(); } }
+                        </code>
+                    </pre>
+                </div>
+                <div class="completed-project">
+                    <a href="https://lokispirit.github.io/rsschool-cv/cv" class="completed-project__link">
+                        <snap class="completed-project__link-title">Completed project:</snap> CV
+                    </a>
+                </div>
+                <div class="languages">
+                    <ul class="languages-list">
+                        <li class="languages__item">Ukrainian - Native</li>
+                        <li class="languages__item">Russian - Native</li>
+                        <li class="languages__item">English - Intermidiate</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>
