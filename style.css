@@ -1,26 +1,115 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v25-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
+    box-sizing: border-box;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+:root {
+    --wheat-color: wheat;
+}
+
+body {
+    background: rgb(178, 130, 40);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    font-style: normal;
 }
 
 a {
     text-decoration: none;
+    color: var(--wheat-color);
+    transition: .2s;
+}
+
+a:hover {
+    color: chocolate;
+    border-bottom: 1px solid chocolate;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    text-align: center;
+    color: var(--wheat-color);
+    text-transform: uppercase;
 }
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container {
-    width: 50%;
-}
+
 
 .sidebar {}
 
@@ -31,7 +120,10 @@ a {
     height: auto;
 }
 
-.avatar-caption {}
+.avatar-caption {
+    color: var(--wheat-color);
+    text-align: center;
+}
 
 .avatar-caption__name {}
 
