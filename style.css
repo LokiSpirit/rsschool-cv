@@ -62,6 +62,8 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -76,6 +78,10 @@ body {
     font-style: normal;
 }
 
+section {
+    padding: 20px;
+}
+
 a {
     text-decoration: none;
     color: var(--wheat-color);
@@ -83,8 +89,24 @@ a {
 }
 
 a:hover {
-    color: chocolate;
-    border-bottom: 1px solid chocolate;
+    color: white;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+    padding: 10px 0;
+}
+
+li {
+    list-style-position: inside;
 }
 
 .container {
@@ -92,30 +114,45 @@ a:hover {
     margin: 0 auto;
 }
 
-.header_wrapper {
+/* Header */
+.header-nav {
+    margin: 0 auto;
+    width: 100%;
+    background-color: brown;
+}
+
+.header-nav-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-nav__item {
+    list-style-type: none;
+    padding: 20px 20px;
 }
 
 .header__title {
-    text-align: center;
     color: var(--wheat-color);
     text-transform: uppercase;
-}
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
 }
 
 
 
-.sidebar {}
+/* Main */
 
-.avatar {}
+.avatar {
+    margin: 0 auto;
+    /*    background-color: chocolate; */
+    padding: 10px 0;
+}
 
 .avatar__pic {
+    display: block;
+    margin: 0 auto;
     width: 385px;
     height: auto;
 }
@@ -125,83 +162,50 @@ a:hover {
     text-align: center;
 }
 
-.avatar-caption__name {}
+.contact-info {
+    margin: 0 auto;
+    background-color: brown;
+}
 
-.contact-info {}
+.discord {
+    color: var(--wheat-color);
+}
 
-.contact-info__phone {}
+.about {
+    background-color: chocolate;
+}
 
-.contact-info__phone_bold {}
+.education {
+    background-color: brown;
+}
 
-.contact-info__mail {}
+.work-experience {
+    background-color: chocolate;
+}
 
-.contact-info__mail_bold {}
+.tech-skills {
+    background-color: brown;
+}
 
-.contact-info__telegram {}
+.code-example {
+    background-color: chocolate;
+}
 
-.contact-info__telegram_bold {}
+.completed-project {
+    background-color: brown;
+}
 
-.contact-info__discord {}
+.completed-project__link-title {
+    display: inline-block;
+}
 
-.contact-info__discord_bold {}
+.completed-project__link {
+    padding-left: 20px;
+}
 
-.main {}
-
-.about {}
-
-.about__goal {}
-
-.about__goal_bold {}
-
-.about__priorities {}
-
-.about__priorities-list {}
-
-.about__priorities-item {}
-
-.education {}
-
-.education__title {}
-
-.education__item {}
-
-.education__item-title {}
-
-.education__item-faculty {}
-
-.education__item-period {}
-
-.work-experience {}
-
-.work-experience__title {}
-
-.work-experience__position {}
-
-.work-experience__period {}
-
-.tech-skills {}
-
-.tech-skills__title {}
-
-.tech-skills-list {}
-
-.tech-skills__item {}
-
-.code-example {}
-
-.code-example__title {}
-
-.code-example_prepared {}
-
-.code-example__snippet {}
-
-.completed-project {}
-
-.completed-project__link {}
-
-.completed-project__link-title {}
-
-.languages {}
+.languages {
+    background-color: chocolate;
+}
 
 .languages-list {}
 
