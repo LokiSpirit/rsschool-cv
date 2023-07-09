@@ -215,16 +215,28 @@ li {
     background-color: brown;
 }
 
+.tech-skills__item {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
+.tech-skills__rating-box {
+    padding-left: 10px;
+    padding-right: 250px;
+}
+
+.tech-skills__rating-box .checked {
+    color: orange;
+}
+
 .code-example {
     background-color: chocolate;
 }
 
 .code-example_prepared {
-
     overflow: auto;
 }
-
-.code-example__snippet {}
 
 .completed-project {
     background-color: brown;
