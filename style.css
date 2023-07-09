@@ -1,116 +1,268 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/montserrat-v25-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/montserrat-v25-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/montserrat-v25-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/montserrat-v25-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
+    box-sizing: border-box;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --wheat-color: wheat;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    font-style: normal;
+    background: rgb(178, 130, 40);
+}
+
+section {
+    width: 50%;
+    padding: 20px 20px 20px 50px;
 }
 
 a {
     text-decoration: none;
+    color: var(--wheat-color);
+    transition: .2s;
+    line-height: 1.2;
 }
 
-.wrapper {
-    display: flex;
+a:hover {
+    color: white;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+p,
+li,
+h1,
+h2,
+h3 {
+    padding: 10px 0;
+}
+
+li {
+    list-style-position: inside;
 }
 
 .container {
-    width: 50%;
+    max-width: 1440px;
+    min-width: 400px;
+    margin: 0 auto;
 }
 
-.sidebar {}
 
-.avatar {}
+/* Header */
+.header {
+    width: 100%;
+
+}
+
+.header-nav {
+    background-color: brown;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2
+}
+
+.header-nav_active {
+    background-color: burlywood;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-nav__item {
+    list-style-type: none;
+    padding: 20px 20px;
+}
+
+.header__title {
+    color: var(--wheat-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* Main */
+.main {
+    padding-top: 100px;
+}
+
+.avatar {
+    margin: 0 auto;
+    /*    background-color: chocolate; */
+    padding: 10px 0;
+}
 
 .avatar__pic {
+    display: block;
+    margin: 0 auto;
     width: 385px;
     height: auto;
 }
 
-.avatar-caption {}
+.avatar-caption {
+    color: var(--wheat-color);
+    text-align: center;
+}
 
-.avatar-caption__name {}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.contact-info {}
+.contact-info {
+    margin: 0 auto;
+    background-color: brown;
+}
 
-.contact-info__phone {}
+.discord {
+    color: var(--wheat-color);
+}
 
-.contact-info__phone_bold {}
+.about {
+    background-color: chocolate;
+}
 
-.contact-info__mail {}
+.education {
+    background-color: brown;
+}
 
-.contact-info__mail_bold {}
+.work-experience {
+    background-color: chocolate;
+}
 
-.contact-info__telegram {}
+.tech-skills {
+    background-color: brown;
+}
 
-.contact-info__telegram_bold {}
+.code-example {
+    background-color: chocolate;
+}
 
-.contact-info__discord {}
+.code-example_prepared {
 
-.contact-info__discord_bold {}
-
-.main {}
-
-.about {}
-
-.about__goal {}
-
-.about__goal_bold {}
-
-.about__priorities {}
-
-.about__priorities-list {}
-
-.about__priorities-item {}
-
-.education {}
-
-.education__title {}
-
-.education__item {}
-
-.education__item-title {}
-
-.education__item-faculty {}
-
-.education__item-period {}
-
-.work-experience {}
-
-.work-experience__title {}
-
-.work-experience__position {}
-
-.work-experience__period {}
-
-.tech-skills {}
-
-.tech-skills__title {}
-
-.tech-skills-list {}
-
-.tech-skills__item {}
-
-.code-example {}
-
-.code-example__title {}
-
-.code-example_prepared {}
+    overflow: auto;
+}
 
 .code-example__snippet {}
 
-.completed-project {}
+.completed-project {
+    background-color: brown;
+}
 
-.completed-project__link {}
+.completed-project__link-title {
+    display: inline-block;
+}
 
-.completed-project__link-title {}
+.completed-project__link {
+    padding-left: 20px;
+}
 
-.languages {}
+.languages {
+    background-color: chocolate;
+}
 
-.languages-list {}
+/* Footer */
 
-.languages__item {}
+.footer-wrapper {
+    padding: 20px 20px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_github-link,
+.footer_rsshool-link {
+    color: #000;
+    font-size: 1.2;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
