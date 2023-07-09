@@ -5,7 +5,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    src: url('../assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -16,7 +16,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2');
+    src: url('../assets/fonts/montserrat-v25-latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -27,7 +27,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2');
+    src: url('../assets/fonts/montserrat-v25-latin-600.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -38,7 +38,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/montserrat-v25-latin-700.woff2') format('woff2');
+    src: url('../assets/fonts/montserrat-v25-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -49,13 +49,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/montserrat-v25-latin-900.woff2') format('woff2');
+    src: url('../assets/fonts/montserrat-v25-latin-900.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -71,21 +72,27 @@ html {
 }
 
 body {
-    background: rgb(178, 130, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     line-height: 1.2;
     font-style: normal;
+    background: rgb(178, 130, 40);
 }
 
 section {
-    padding: 20px;
+    width: 50%;
+    padding: 20px 20px 20px 50px;
 }
 
 a {
     text-decoration: none;
     color: var(--wheat-color);
     transition: .2s;
+    line-height: 1.2;
 }
 
 a:hover {
@@ -110,7 +117,7 @@ li {
 }
 
 .container {
-    max-width: 90vw;
+    max-width: 1440px;
     min-width: 400px;
     margin: 0 auto;
 }
@@ -176,6 +183,11 @@ li {
 .avatar-caption {
     color: var(--wheat-color);
     text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-info {
@@ -247,4 +259,10 @@ li {
     font-size: 1.2;
     font-weight: bold;
     line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
 }

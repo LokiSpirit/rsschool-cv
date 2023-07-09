@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Swift icon by Icons8 -->
+    <link rel="icon" href="assets/img/favicon.ico">
     <title>CV</title>
 </head>
 
@@ -18,6 +20,7 @@
                 <li class="header-nav__item"><a href="#education" class="header-nav_link">Education</a></li>
                 <li class="header-nav__item"><a href="#work-experience" class="header-nav_link">Work</a></li>
                 <li class="header-nav__item"><a href="#tech-skills" class="header-nav_link">Tech Skills</a></li>
+                <li class="header-nav__item"><a href="#code-example" class="header-nav_link">Code</a></li>
                 <li class="header-nav__item"><a href="#languages" class="header-nav_link">Languages</a></li>
             </ul>
         </nav>
@@ -29,98 +32,100 @@
                 Front-End Developer
             </h1>
             <figure class="avatar">
-                <img src="img/resume.jpg" alt="Photo" class="avatar__pic">
+                <img src="assets/img/resume.jpg" alt="Photo" class="avatar__pic">
                 <figcaption class="avatar-caption">
                     <h2 class="avatar-caption__name">OLGA KRUKOVA</h2>
                 </figcaption>
             </figure>
-            <section class="contact-info" id="contact-info">
-                <h3 class="contact-info-intro intro">Contact information:</h3>
-                <p class="contact-info__item phone"><a href="tel:+380957248791"><span
-                            class="contact-info__phone_bold">Tel:</span> +380957248791</a></p>
-                <p class="contact-info__item mail"><a href="mailto:krukovaolga1@gmail.com"><span
-                            class="contact-info__mail_bold">Email to:</span> Olga Krukova</a></p>
-                <p class="contact-info__item telegram"><a href="https://t.me/ragnarok7771">
-                        <span class="contact-info__telegram_bold">Telegram:</span> send a message</a></p>
-                <p class="contact-info__item discord"><span class="contact-info__discord_bold">Discord:</span>
-                    OlgaKrukova(@lokispirit)</p>
-            </section>
-
-            <section class="about" id="about">
-                <h3 class="contact-info-intro intro">About:</h3>
-                <p class="about__goal"><span class="about__goal_bold">Goal:</span> To become a java-programmer</p>
-                <p class="about__priorities"><span>Priorities</span>:</p>
-                <ul class="about__priorities-list">
-                    <li class="about__priorities-item">interesting, creative work</li>
-                    <li class="about__priorities-item">decent salary</li>
-                    <li class="about__priorities-item">the opportunity to develop myself in other IT areas</li>
-                </ul>
-            </section>
-            <!-- Education -->
-            <section class="education" id="education">
-                <h3 class="education__title intro">Education:</h3>
-                <div class="education__item">
-                    <a href="https://ontu.edu.ua/" class="education__item-title">Odessa National University of
-                        Technology</a>
-                    <p class="education__item-faculty">Management</p>
-                    <p class="education__item-period">September 1999 - June 2004 | Ukraine</p>
-                </div>
-                <div class="education__item">
-                    <a href="https://odeku.edu.ua/en/main-en/" class="education__item-title">Odessa State
-                        Environmental University</a>
-                    <p class="education__item-faculty">Oceanology</p>
-                    <p class="education__item-period">September 2011 - June 2016 | Ukraine</p>
-                </div>
-            </section>
-            <!-- Work experiance -->
-            <section class="work-experience" id="work-experience">
-                <h3 class="work-experience__title intro">Work experiance:</h3>
-                <p class="work-experience__position">Sale Manager</p>
-                <p class="work-experience__period">September 2004 - Novenber 2011 | Ukraine</p>
-            </section>
-            <section class="tech-skills" id="tech-skills">
-                <h3 class="tech-skills__title intro">Tech Skills</h3>
-                <ol class="tech-skills-list">
-                    <li class="tech-skills__item">JAVA Core</li>
-                    <li class="tech-skills__item">HTML5</li>
-                    <li class="tech-skills__item">CSS3</li>
-                </ol>
-            </section>
-            <section class="code-example">
-                <h3 class="code-example__title intro">Code example:</h3>
-                <pre class="code-example_prepared">
-                    <code class="code-example__snippet">
-public class Solution {
-    static String toCamelCase(String s) {
-        if(s==null || s.isEmpty()){
-            return "";
-        }
-        String[] split = s.split("[_-]");
-        StringBuilder builder = new StringBuilder();
-        builder.append(split[0]);
-        for (int i = 1; i &lt; split.length; i++) {
-            builder.append(split[i].substring(0, 1)
-                .toUpperCase() +
-                split[i].substring(1));
-        }
-        return builder.toString();
-    }
-}
-                </code>
-                </pre>
-            </section>
-            <section class="completed-project" id="completed-project">
-                <h3 class="completed-project__link-title intro">Completed project:</h3>
-                <a href="https://lokispirit.github.io/rsschool-cv/cv" class="completed-project__link">CV</a>
-            </section>
-            <section class="languages" id="languages">
-                <h3 class="languages-intro intro">Languages</h3>
-                <ul class="languages-list">
-                    <li class="languages__item">Ukrainian - Native</li>
-                    <li class="languages__item">Russian - Native</li>
-                    <li class="languages__item">English - Intermidiate</li>
-                </ul>
-            </section>
+            <div class="main-container">
+                <section class="section contact-info" id="contact-info">
+                    <h3 class="contact-info-intro intro">Contact information:</h3>
+                    <p class="contact-info__item phone"><a href="tel:+380957248791"><span
+                                class="contact-info__phone_bold">Tel:</span>
+                            +380957248791</a></p>
+                    <p class="contact-info__item mail"><a href="mailto:krukovaolga1@gmail.com"><span
+                                class="contact-info__mail_bold">Email to:</span> Olga Krukova</a></p>
+                    <p class="contact-info__item telegram"><a href="https://t.me/ragnarok7771">
+                            <span class="contact-info__telegram_bold">Telegram:</span> send a message</a></p>
+                    <p class="contact-info__item discord"><span class="contact-info__discord_bold">Discord:</span>
+                        OlgaKrukova(@lokispirit)</p>
+                </section>
+                <section class="section about" id="about">
+                    <h3 class="contact-info-intro intro">About:</h3>
+                    <p class="about__goal"><span class="about__goal_bold">Goal:</span> To become a java-programmer</p>
+                    <p class="about__priorities"><span>Priorities</span>:</p>
+                    <ul class="about__priorities-list">
+                        <li class="about__priorities-item">interesting, creative work</li>
+                        <li class="about__priorities-item">decent salary</li>
+                        <li class="about__priorities-item">the opportunity to develop myself in other IT areas</li>
+                    </ul>
+                </section>
+                <!-- Education -->
+                <section class="section education" id="education">
+                    <h3 class="education__title intro">Education:</h3>
+                    <div class="education__item">
+                        <a href="https://ontu.edu.ua/" class="education__item-title">Odessa National University of
+                            Technology</a>
+                        <p class="education__item-faculty">Management</p>
+                        <p class="education__item-period">September 1999 - June 2004 | Ukraine</p>
+                    </div>
+                    <div class="education__item">
+                        <a href="https://odeku.edu.ua/en/main-en/" class="education__item-title">Odessa State
+                            Environmental University</a>
+                        <p class="education__item-faculty">Oceanology</p>
+                        <p class="education__item-period">September 2011 - June 2016 | Ukraine</p>
+                    </div>
+                </section>
+                <!-- Work experiance -->
+                <section class="section work-experience" id="work-experience">
+                    <h3 class="work-experience__title intro">Work experiance:</h3>
+                    <p class="work-experience__position">Sale Manager</p>
+                    <p class="work-experience__period">September 2004 - Novenber 2011 | Ukraine</p>
+                </section>
+                <section class="section tech-skills" id="tech-skills">
+                    <h3 class="tech-skills__title intro">Tech Skills</h3>
+                    <ul class="tech-skills-list">
+                        <li class="tech-skills__item">JAVA Core</li>
+                        <li class="tech-skills__item">HTML5</li>
+                        <li class="tech-skills__item">CSS3</li>
+                    </ul>
+                </section>
+                <section class="section code-example" id="code-example">
+                    <h3 class="code-example__title intro">Code example:</h3>
+                    <pre class="code-example_prepared">
+                                    <code class="code-example__snippet">
+ public class Solution {
+     static String toCamelCase(String s) {
+         if(s==null || s.isEmpty()){
+             return "";
+         }
+         String[] split = s.split("[_-]");
+         StringBuilder builder = new StringBuilder();
+         builder.append(split[0]);
+         for (int i = 1; i &lt; split.length; i++) {
+             builder.append(split[i].substring(0, 1)
+                 .toUpperCase() +
+                 split[i].substring(1));
+         }
+         return builder.toString();
+     }
+ }
+                                </code>
+                                </pre>
+                </section>
+                <section class="section completed-project" id="completed-project">
+                    <h3 class="completed-project__link-title intro">Completed project:</h3>
+                    <a href="https://lokispirit.github.io/rsschool-cv/cv" class="completed-project__link">CV</a>
+                </section>
+                <section class="section languages" id="languages">
+                    <h3 class="languages-intro intro">Languages</h3>
+                    <ul class="languages-list">
+                        <li class="languages__item">Ukrainian - Native</li>
+                        <li class="languages__item">Russian - Native</li>
+                        <li class="languages__item">English - Intermidiate</li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </main>
     <!-- Footer -->
