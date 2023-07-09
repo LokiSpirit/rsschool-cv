@@ -111,14 +111,27 @@ li {
 
 .container {
     max-width: 90vw;
+    min-width: 400px;
     margin: 0 auto;
 }
 
+
 /* Header */
+.header {
+    width: 100%;
+
+}
+
 .header-nav {
+    background-color: brown;
+    position: fixed;
     margin: 0 auto;
     width: 100%;
-    background-color: brown;
+    z-index: 2
+}
+
+.header-nav_active {
+    background-color: burlywood;
 }
 
 .header-nav-list {
@@ -143,6 +156,9 @@ li {
 
 
 /* Main */
+.main {
+    padding-top: 100px;
+}
 
 .avatar {
     margin: 0 auto;
@@ -191,6 +207,13 @@ li {
     background-color: chocolate;
 }
 
+.code-example_prepared {
+
+    overflow: auto;
+}
+
+.code-example__snippet {}
+
 .completed-project {
     background-color: brown;
 }
@@ -207,6 +230,21 @@ li {
     background-color: chocolate;
 }
 
-.languages-list {}
+/* Footer */
 
-.languages__item {}
+.footer-wrapper {
+    padding: 20px 20px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_github-link,
+.footer_rsshool-link {
+    color: #000;
+    font-size: 1.2;
+    font-weight: bold;
+    line-height: 1.2;
+}
